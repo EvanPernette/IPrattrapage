@@ -6,7 +6,9 @@ internal static class Program
 {
     private static void Main()
     {
+        int[] list = Tools.Histogram("Aa c");
         // Put your tests here.
+        Console.WriteLine(list[0]);
         
         Test();
     }

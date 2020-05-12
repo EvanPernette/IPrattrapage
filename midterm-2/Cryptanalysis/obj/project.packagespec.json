@@ -1,10 +1,10 @@
 ﻿{
   "version": "1.0.0",
   "restore": {
-    "projectUniqueName": "C:\\Users\\evanp\\OneDrive\\Bureau\\midterm-2\\Cryptanalysis\\Cryptanalysis.csproj",
+    "projectUniqueName": "C:\\Users\\evanp\\IPrattrapage\\midterm-2\\Cryptanalysis\\Cryptanalysis.csproj",
     "projectName": "Cryptanalysis",
-    "projectPath": "C:\\Users\\evanp\\OneDrive\\Bureau\\midterm-2\\Cryptanalysis\\Cryptanalysis.csproj",
-    "outputPath": "C:\\Users\\evanp\\OneDrive\\Bureau\\midterm-2\\Cryptanalysis\\obj\\",
+    "projectPath": "C:\\Users\\evanp\\IPrattrapage\\midterm-2\\Cryptanalysis\\Cryptanalysis.csproj",
+    "outputPath": "C:\\Users\\evanp\\IPrattrapage\\midterm-2\\Cryptanalysis\\obj\\",
     "projectStyle": "PackageReference",
     "fallbackFolders": [
       "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"

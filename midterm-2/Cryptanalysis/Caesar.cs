@@ -12,17 +12,40 @@ public class Caesar
 
     public string Encrypt(string msg)
     {
-        throw new NotImplementedException();
+        string res = "";
+        foreach (char c in msg)
+        {
+            res += Tools.RotChar(c, Key);
+        }
+
+        return res;
     }
 
     public string Decrypt(string cypherText)
     {
-        throw new NotImplementedException();
+        string res = "";
+        foreach (char c in cypherText)
+        {
+            res += Tools.RotChar(c, -Key);
+        }
+
+        return res;
     }
     
     public static int GuessKey(string cypherText)
     {
-        throw new NotImplementedException();
+        int[] list = Tools.Histogram(cypherText);
+        int max = 0;
+        int count = 0;
+        foreach (int x in list)
+        {
+            if (x > max)
+            {
+                max = x;
+            }
+        }
+        
+        
     }
 }
 }
