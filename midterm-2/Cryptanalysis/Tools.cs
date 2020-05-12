@@ -62,10 +62,17 @@ public static class Tools
 
     public static int[] Histogram(string str)
     {
-        throw new NotImplementedException();
+       int[] list = new[] { 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 };
+        foreach (char c in str)
+        {
+            list[LetterIndex(c)] += 1;
+        }
+
+        return list;
     }
-    
-    public static string FilterLetters(string str)
+            
+
+        public static string FilterLetters(string str)
     {
         throw new NotImplementedException();
     }
