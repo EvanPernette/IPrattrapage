@@ -37,15 +37,22 @@ public class Caesar
         int[] list = Tools.Histogram(cypherText);
         int max = 0;
         int count = 0;
+        int occ = 0;
         foreach (int x in list)
         {
+            
             if (x > max)
             {
+                occ = count;
                 max = x;
             }
+            count += 1;
         }
-        
-        
+
+        return occ - 5;
+
+
+
     }
 }
 }

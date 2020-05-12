@@ -5,19 +5,48 @@ namespace Cryptanalysis
 public class Vigenere
 {
     public const float FrenchIndexOfCoincidence = 0.0778F;
+    private string Key;
     public Vigenere(string key)
     {
-        throw new NotImplementedException();
+        this.Key = key;
     }
 
     public string Encrypt(string msg)
     {
-        throw new NotImplementedException();
+        string res = "";
+        int count = 0;
+        int len = Key.Length;
+        foreach (char c in msg)
+        {
+            if (count == len)
+            {
+                count = 0;
+            }
+            res += Tools.RotChar(c, Key[count]);
+            count += 1;
+
+        }
+
+        return res;
     }
 
     public string Decrypt(string cypherText)
     {
-        throw new NotImplementedException();
+        string res = "";
+        int count = 0;
+        int len = Key.Length;
+        foreach (char c in cypherText)
+        {
+            if (count == len)
+            {
+                count = 0;
+            }
+            res += Tools.RotChar(c, -Key[count]);
+            count += 1;
+
+        }
+
+        return res;
     }
 
     public static string GuessKeyWithLength(string cypherText, int keyLength)
